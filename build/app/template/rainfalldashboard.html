@@ -1,0 +1,30 @@
+<div class="topWrapper">
+    <div class="b-box">
+      <span>Charts</span>
+      <div class="d-box">
+        <span>Chance of rain chart</span>
+        <div id="chanceOfRainChartWrapper">
+        </div>
+      </div>
+      <div class="d-box">
+        <span>Amount of rainfall chart</span>
+        <div id="rainfallChartWrapper">
+        </div>
+      </div>
+    </div>
+    <div class="b-box">
+      <span>Controls</span>
+      <div class="d-box">
+        <span>Pressure: {{pressureSlider.value}}</span>
+        <div class="sliderWrapper">
+            <input id="pressureSlider" class="slider" type="range" ng-change="sliderChange(event)" ng-model="pressureSlider.value" min="{{pressureSlider.options.floor}}" max="{{pressureSlider.options.ceil}}" step="1" />
+        </div>
+      </div>
+      <div class="d-box">
+        <span>Temperature: {{temperatureSlider.value}}</span>
+        <div class="sliderWrapper">
+            <input id="temperatureSlider" class="slider" type="range" ng-change="sliderChange(event)" ng-model="temperatureSlider.value" min="{{temperatureSlider.options.floor}}" max="{{temperatureSlider.options.ceil}}" step="1" />
+        </div>
+      </div>
+    </div>
+</div>
